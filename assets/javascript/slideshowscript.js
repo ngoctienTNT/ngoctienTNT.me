@@ -1,95 +1,95 @@
-//Chuyển tự động ảnh bìa 
-var coverList = ["./assets/img/cover1.jpg", "./assets/img/cover2.jpg",
-                "./assets/img/cover3.jpg", "./assets/img/cover4.jpg",
-                "./assets/img/cover5.jpg", "./assets/img/cover6.jpg"];
-
-setInterval(slideshow, 5000);
-var i=1;
-
-function slideshow ()
-{    
-    document.getElementById("cover-img").src=coverList[i];
-    i++;
-    if (i>5) i=0;
+var _0xc54e=["\x2E\x2F\x61\x73\x73\x65\x74\x73\x2F\x69\x6D\x67\x2F\x63\x6F\x76\x65\x72\x31\x2E\x6A\x70\x67","\x2E\x2F\x61\x73\x73\x65\x74\x73\x2F\x69\x6D\x67\x2F\x63\x6F\x76\x65\x72\x32\x2E\x6A\x70\x67","\x2E\x2F\x61\x73\x73\x65\x74\x73\x2F\x69\x6D\x67\x2F\x63\x6F\x76\x65\x72\x33\x2E\x6A\x70\x67","\x2E\x2F\x61\x73\x73\x65\x74\x73\x2F\x69\x6D\x67\x2F\x63\x6F\x76\x65\x72\x34\x2E\x6A\x70\x67","\x2E\x2F\x61\x73\x73\x65\x74\x73\x2F\x69\x6D\x67\x2F\x63\x6F\x76\x65\x72\x35\x2E\x6A\x70\x67","\x2E\x2F\x61\x73\x73\x65\x74\x73\x2F\x69\x6D\x67\x2F\x63\x6F\x76\x65\x72\x36\x2E\x6A\x70\x67","\x73\x72\x63","\x63\x6F\x76\x65\x72\x2D\x69\x6D\x67","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x6F\x6E\x73\x65\x6C\x65\x63\x74\x73\x74\x61\x72\x74","\x72\x65\x74\x75\x72\x6E\x20\x66\x61\x6C\x73\x65","\x73\x69\x64\x65\x62\x61\x72","\x6F\x6E\x6D\x6F\x75\x73\x65\x64\x6F\x77\x6E","\x6F\x6E\x63\x6C\x69\x63\x6B","\x2E\x6E\x6F\x74\x65","\x71\x75\x65\x72\x79\x53\x65\x6C\x65\x63\x74\x6F\x72","\x64\x69\x73\x70\x6C\x61\x79","\x73\x74\x79\x6C\x65","\x6E\x6F\x6E\x65","\x6F\x6E\x6C\x6F\x61\x64","\x63\x6F\x6E\x74\x65\x78\x74\x6D\x65\x6E\x75","\x70\x72\x65\x76\x65\x6E\x74\x44\x65\x66\x61\x75\x6C\x74","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x6B\x65\x79\x64\x6F\x77\x6E","\x63\x74\x72\x6C\x4B\x65\x79","\x73\x68\x69\x66\x74\x4B\x65\x79","\x6B\x65\x79\x43\x6F\x64\x65","\x4D\x61\x63","\x6D\x61\x74\x63\x68","\x70\x6C\x61\x74\x66\x6F\x72\x6D","\x6D\x65\x74\x61\x4B\x65\x79","\x73\x74\x6F\x70\x50\x72\x6F\x70\x61\x67\x61\x74\x69\x6F\x6E","\x65\x76\x65\x6E\x74","\x63\x61\x6E\x63\x65\x6C\x42\x75\x62\x62\x6C\x65","\x6F\x6E\x6B\x65\x79\x64\x6F\x77\x6E","\x75","\x6B\x65\x79\x70\x72\x65\x73\x73"];
+var coverList=[_0xc54e[0],_0xc54e[1],_0xc54e[2],_0xc54e[3],_0xc54e[4],_0xc54e[5]];
+setInterval(slideshow,5000);var i=1;
+function slideshow()
+{
+	document[_0xc54e[8]](_0xc54e[7])[_0xc54e[6]]= coverList[i];i++;if(i> 5)
+	{
+		i= 0
+	}
 }
-
-//Chống copy
-function killCopy(e){
-    return false;
+function killCopy(_0xc2b0x5)
+{
+	return false
 }
-
-function reEnable(){
-    return true;
+function reEnable()
+{
+	return true
 }
-
-document.onselectstart=new Function ("return false");
-
-if (window.sidebar){
-    document.onmousedown=killCopy;
-    document.onclick=reEnable;
+document[_0xc54e[9]]=  new Function(_0xc54e[10]);if(window[_0xc54e[11]])
+{
+	document[_0xc54e[12]]= killCopy;document[_0xc54e[13]]= reEnable
 }
-
 function noteOut()
 {
-    var note = document.querySelector(".note");
-    note.style.display = "none";
+	var _0xc2b0x8=document[_0xc54e[15]](_0xc54e[14]);
+	_0xc2b0x8[_0xc54e[17]][_0xc54e[16]]= _0xc54e[18]
 }
-
-setInterval(noteOut,3000);
-
-//Chống chuột phải 
-window.onload = function() {
-    document.addEventListener("contextmenu", function(e) {
-        e.preventDefault();
-    }, false);
-    document.addEventListener("keydown", function(e) {
-        //document.onkeydown = function(e) {
-        // "I" key
-        if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
-            disabledEvent(e);
-        }
-        // "J" key
-        if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
-            disabledEvent(e);
-        }
-        // "S" key + macOS
-        if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
-            disabledEvent(e);
-        }
-        // "U" key
-        if (e.ctrlKey && e.keyCode == 85) {
-            disabledEvent(e);
-        }
-        // "F12" key
-        if (event.keyCode == 123) {
-            disabledEvent(e);
-        }
-    }, false);
-
-    function disabledEvent(e) {
-        if (e.stopPropagation) {
-            e.stopPropagation();
-        } else if (window.event) {
-            window.event.cancelBubble = true;
-        }
-        e.preventDefault();
-        return false;
-    }
-};
-
-//Chống Ctrl + U
-document.onkeydown = function(e) {
-    if (e.ctrlKey && 
-        (e.keyCode === 67 || 
-         e.keyCode === 86 || 
-         e.keyCode === 85 || 
-         e.keyCode === 117)) {
-        return false;
-    } else {
-        return true;
-    }
-};
-$(document).keypress("u",function(e) {
-    if(e.ctrlKey) return false;
-    else return true;
-});
+setInterval(noteOut,3000);window[_0xc54e[19]]= function()
+{
+	document[_0xc54e[22]](_0xc54e[20],function(_0xc2b0x5)
+	{
+		_0xc2b0x5[_0xc54e[21]]()
+	}
+	,false);document[_0xc54e[22]](_0xc54e[23],function(_0xc2b0x5)
+	{
+		if(_0xc2b0x5[_0xc54e[24]]&& _0xc2b0x5[_0xc54e[25]]&& _0xc2b0x5[_0xc54e[26]]== 73)
+		{
+			_0xc2b0x9(_0xc2b0x5)
+		}
+		if(_0xc2b0x5[_0xc54e[24]]&& _0xc2b0x5[_0xc54e[25]]&& _0xc2b0x5[_0xc54e[26]]== 74)
+		{
+			_0xc2b0x9(_0xc2b0x5)
+		}
+		if(_0xc2b0x5[_0xc54e[26]]== 83&& (navigator[_0xc54e[29]][_0xc54e[28]](_0xc54e[27])?_0xc2b0x5[_0xc54e[30]]:_0xc2b0x5[_0xc54e[24]]))
+		{
+			_0xc2b0x9(_0xc2b0x5)
+		}
+		if(_0xc2b0x5[_0xc54e[24]]&& _0xc2b0x5[_0xc54e[26]]== 85)
+		{
+			_0xc2b0x9(_0xc2b0x5)
+		}
+		if(event[_0xc54e[26]]== 123)
+		{
+			_0xc2b0x9(_0xc2b0x5)
+		}
+	}
+	,false);function _0xc2b0x9(_0xc2b0x5)
+	{
+		if(_0xc2b0x5[_0xc54e[31]])
+		{
+			_0xc2b0x5[_0xc54e[31]]()
+		}
+		else 
+		{
+			if(window[_0xc54e[32]])
+			{
+				window[_0xc54e[32]][_0xc54e[33]]= true
+			}
+		}
+		_0xc2b0x5[_0xc54e[21]]();return false
+	}
+}
+;document[_0xc54e[34]]= function(_0xc2b0x5)
+{
+	if(_0xc2b0x5[_0xc54e[24]]&& (_0xc2b0x5[_0xc54e[26]]=== 67|| _0xc2b0x5[_0xc54e[26]]=== 86|| _0xc2b0x5[_0xc54e[26]]=== 85|| _0xc2b0x5[_0xc54e[26]]=== 117))
+	{
+		return false
+	}
+	else 
+	{
+		return true
+	}
+}
+;$(document)[_0xc54e[36]](_0xc54e[35],function(_0xc2b0x5)
+{
+	if(_0xc2b0x5[_0xc54e[24]])
+	{
+		return false
+	}
+	else 
+	{
+		return true
+	}
+}
+)
