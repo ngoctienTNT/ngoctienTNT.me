@@ -35,7 +35,7 @@ function noteOut()
     note.style.display = "none";
 }
 
-setTimeout(noteOut,3000);
+setInterval(noteOut,3000);
 
 //Chống chuột phải 
 window.onload = function() {
