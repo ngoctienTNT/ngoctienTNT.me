@@ -1,3 +1,10 @@
+@media (min-width: 739px)
+{
+.note
+{
+    display: none;
+}
+
 body
 {
     background: linear-gradient(to top right, red, white);
@@ -283,4 +290,112 @@ body
 .yt-icon
 {
     color: red;
+}
+}
+
+@media (max-width: 739px)
+{
+    .note
+    {
+        position: fixed;
+        top: 35%;
+        display: inline;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        color: red;
+    }
+
+    #body
+    {
+        display: none;
+    }
+
+    #avatar
+    {
+        z-index: 1;
+        background-color: white;
+        top: 200px;
+        left: 100px;
+        border-radius: 0 50px 0 50px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .avatar-img img
+    {
+        width: 100%;
+        border-radius: 0 50px 0 50px;
+    }
+
+    .follow
+    {
+        border: none;
+        border-radius: 50px;
+        position: absolute;
+        font-size: 35px;
+        color: red;
+        background-color: azure;
+        width: 170px;
+        height: 60px;
+        top: 430px;
+        left: 25%;
+        font-weight: 800;
+        font-family: 'Courier New', Courier, monospace;
+        cursor: pointer;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .social-network
+    {
+        font-size: 25px;
+        position: absolute;    
+    }
+
+    .facebook
+    {
+        top: 550px;
+        left: 25%;
+    }
+
+    .instagram
+    {
+        top: 600px;
+        left: 25%;
+    }
+
+    .youtube
+    {
+        top: 700px;
+        left: 25%;
+    }
+
+    .linkedin
+    {
+        top: 650px;
+        left: 25%;
+    }
+
+    .github
+    {
+        top: 750px;
+        left: 25%;
+    }
+
+    .link
+    {
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .fb-icon,
+    .link-icon
+    {
+        color: blue;
+    }
+
+    .ins-icon,
+    .yt-icon
+    {
+        color: red;
+    }
 }
