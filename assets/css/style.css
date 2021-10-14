@@ -50,6 +50,11 @@ body
     border-radius: 10px;
 }
 
+#body #cover .name:hover
+{
+    box-shadow: 0 0 30px rgba(0, 0, 0, 1);
+}
+
 #body #cover .work
 {
     position: absolute;
@@ -63,6 +68,11 @@ body
     border-radius: 10px;
 }
 
+#body #cover .work:hover
+{
+    box-shadow: 0 0 30px rgba(0, 0, 0, 1);
+}
+
 #body #cover .id
 {
     position: absolute;
@@ -74,6 +84,11 @@ body
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     padding: 5px;
+}
+
+#body #cover .id:hover
+{
+    box-shadow: 0 0 30px rgba(0, 0, 0, 1);
 }
 
 #body #content-body
@@ -120,6 +135,19 @@ body
     text-decoration: none;
     font-weight: 500;
     color: black;
+}
+
+.email:hover,
+.phone:hover,
+.web:hover
+{
+    font-weight: 900;
+    color: blueviolet;
+}
+
+.content-about:hover
+{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .content-about
@@ -174,6 +202,8 @@ body
 {
     background-color: green;
     color: black;
+    box-shadow: 0 0 30px red;
+    font-size: 40px;
 }
 
 .social-network
@@ -188,10 +218,20 @@ body
     left: 80px;
 }
 
+.facebook:hover
+{
+    font-size: 30px;
+}
+
 .instagram
 {
     top: 600px;
     left: 80px;
+}
+
+.instagram:hover
+{
+    font-size: 30px;
 }
 
 .youtube
@@ -200,16 +240,31 @@ body
     left: 80px;
 }
 
+.youtube:hover
+{
+    font-size: 30px;
+}
+
 .linkedin
 {
     top: 650px;
     left: 80px;
 }
 
+.linkedin:hover
+{
+    font-size: 30px;
+}
+
 .github
 {
     top: 750px;
     left: 80px;
+}
+
+.github:hover
+{
+    font-size: 30px;
 }
 
 .link
