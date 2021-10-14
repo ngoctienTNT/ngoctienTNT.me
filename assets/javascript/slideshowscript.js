@@ -29,6 +29,14 @@ if (window.sidebar){
     document.onclick=reEnable;
 }
 
+function noteOut()
+{
+    var note = document.querySelector(".note");
+    note.style.display = "none";
+}
+
+setTimeout(noteOut,3000);
+
 //Chống chuột phải 
 window.onload = function() {
     document.addEventListener("contextmenu", function(e) {
